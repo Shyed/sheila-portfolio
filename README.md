@@ -19,3 +19,7 @@ Live Site: [https://shyed.github.io/sheila-portfolio/](https://shyed.github.io/s
 - Organized folder structure (css, js, images, videos)
 
 ---
+Author
+
+Created by Sheila Demonteverde  
+Junior Software Engineering Student at Penn State World Campus
