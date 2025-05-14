@@ -197,4 +197,13 @@ body {
     font-size: 0.95em;
     color: #333;
   }
+.category-label {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
   
