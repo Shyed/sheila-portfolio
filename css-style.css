@@ -108,7 +108,7 @@ body {
     border: 3px solid #00796b;
   }
 
-/* Resumne section layout */
+/* Resume section layout */
   .resume {
     padding: 40px 20px;
     max-width: 900px;
@@ -189,6 +189,12 @@ body {
     width: 100%;
     border-radius: 5px;
   }
+
+/*Project image styling*/
+.project-card img {
+  width: 100%;
+  border-radius: 5px;
+}
 
 /* Achievements section layout */
   .achievements {
