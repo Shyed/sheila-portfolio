@@ -192,6 +192,9 @@ body {
 
 /*Project image styling*/
 .project-card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;   /* control size */
   width: 100%;
   border-radius: 5px;
 }
