@@ -1,255 +1,363 @@
-/* Global style - applies to entire website */
+/* =========================
+   Global Styles
+========================= */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    color: #333;
-  }
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8fafc;
+  color: #1f2937;
+  line-height: 1.6;
+}
 
-/* Header styling */
-  header {
-    background: #222;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
 
-/* Navigation list reset */
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
+/* =========================
+   Header
+========================= */
 
-/* Navigation items inline */
-  nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
+header {
+  background: #111827;
+  color: white;
+  padding: 20px 50px;
 
-/* Navigation links styling */
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 
-/* Hero section (homepage intro) */
-  .hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: #e0f7fa;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-/* Button styling */
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #00796b;
-    color: white;
-    text-decoration: none;
-    margin-top: 20px;
-  }
+/* Left side of header */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-/* Footer styling */
-  footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 40px;
-  }
+/* Logo */
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
 
-/* Logo image */
-  .logo {
-    height: 60px;
-    vertical-align: middle;
-    margin-right: 15px;
-  }
+/* Name */
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
 
-/* Header title alignment */
-  header h1 {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-  }
+/* =========================
+   Navigation
+========================= */
 
-/* About page layout */
-  .about {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
-    line-height: 1.8;
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
 
-/* Center headings in About section */
-  .about h2, .about h3 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
 
-/* About list styling */
-  .about ul {
-    list-style: square inside;
-    margin-bottom: 30px;
-  }
+nav a:hover {
+  color: #14b8a6;
+}
 
-/* Profile image container */
-  .profile-pic-container {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+/* =========================
+   Hero Section
+========================= */
 
-/* Profile image styling */
-  .profile-pic {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #00796b;
-  }
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom right, #f8fafc, #dbeafe);
+}
 
-/* Resume section layout */
-  .resume {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-  }
+/* Profile image */
+.profile-pic {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
 
-/* PDF viewer styling*/
-  .pdf-viewer {
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  }
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 
-/* Contact page layout */
-  .contact {
-    padding: 40px 20px;
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-  }
+  transition: 0.3s ease;
+}
 
-/* Contact button */
-  .contact .btn {
-    margin-top: 20px;
-    display: inline-block;
-    background-color: #00796b;
-    color: white;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
+.profile-pic:hover {
+  transform: scale(1.03);
+}
 
-/* Social links container */
-  .social-links {
-    margin-top: 20px;
-    font-size: 1.1em;
-  }
+/* Hero title */
+.hero h2 {
+  font-size: 3rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #111827;
+}
 
-/* Social links styling */
-  .social-links a {
-    color: #00796b;
-    text-decoration: none;
-    margin: 0 8px;
-  }
+/* Hero paragraph */
+.hero p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 1.2rem;
+  color: #374151;
+}
 
-/* Projects section layout */
-  .projects {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-  }
+/* Hero buttons container */
+.hero-buttons {
+  margin-top: 35px;
+}
 
-/* Grid layout for project cards */
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
-  }
+/* Primary button */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #14b8a6;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 10px;
 
-/* Individual project card */
-  .project-card {
-    background: #fff;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
-  }
+  transition: 0.3s ease;
+}
 
-/* Project title spacing */
-  .project-card h3 {
-    margin-bottom: 10px;
-  }
+.btn:hover {
+  background: #0f766e;
+  transform: translateY(-2px);
+}
 
-/* Project video styling */
-  .project-card video {
-    width: 100%;
-    border-radius: 5px;
-  }
+/* Secondary button */
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 28px;
+  border: 2px solid #14b8a6;
+  color: #14b8a6;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 10px;
 
-/*Project image styling*/
+  transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #14b8a6;
+  color: white;
+}
+
+/* =========================
+   About Section
+========================= */
+
+.about {
+  padding: 70px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about h2,
+.about h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.about ul {
+  padding-left: 20px;
+}
+
+/* =========================
+   Projects Section
+========================= */
+
+.projects {
+  padding: 70px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Project grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Project card */
+.project-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Project image */
 .project-card img {
-  display: block;
-  margin: 0 auto;
-  max-width: 250px;   /* control size */
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
-/* Achievements section layout */
-  .achievements {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: auto;
+/* Project video */
+.project-card video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* =========================
+   Resume Section
+========================= */
+
+.resume {
+  padding: 70px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+/* PDF viewer */
+.pdf-viewer {
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   Contact Section
+========================= */
+
+.contact {
+  padding: 70px 20px;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Social links */
+.social-links {
+  margin-top: 25px;
+}
+
+.social-links a {
+  color: #14b8a6;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+/* =========================
+   Achievements Section
+========================= */
+
+.achievements {
+  padding: 70px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Achievement grid */
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Achievement card */
+.achievement-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+  transition: 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Achievement image */
+.achievement-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* =========================
+   Category Labels
+========================= */
+
+.category-label {
+  margin-top: 60px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 60px;
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 20px;
     text-align: center;
   }
 
-/* Grid layout for achievements */
-  .achievement-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-/* Achievement card styling */
-  .achievement-card {
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  .hero h2 {
+    font-size: 2.2rem;
   }
 
-/* Achivement image styling */
-  .achievement-card img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
+  .hero p {
+    font-size: 1rem;
   }
 
-/* Achivement title spacing */
-  .achievement-card h3 {
-    margin: 15px 0 10px;
-  }
-
-/* Achivement description */
-  .achievement-card p {
-    font-size: 0.95em;
-    color: #333;
-  }
-
-/* Category labels (for grouping sections)*/
-.category-label {
-  margin-top: 3rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.5rem;
 }
-
-  
