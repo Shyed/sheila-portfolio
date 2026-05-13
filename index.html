@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
   <!-- Basic setup + responsive design -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,38 +9,48 @@
   <!-- Page title -->
   <title>Sheila Demonteverde | Software Engineer Portfolio</title>
 
-  <!-- Meta Description (shows in Google search results) -->
+  <!-- SEO Description -->
   <meta
     name="description"
-    content="Sheila Demonteverde is a software engineering student building web applications, mobile apps, and cybersecurity projects. View portfolio, projects, resume, and contact information."
+    content="Sheila Demonteverde is a software engineering student building web applications, mobile apps, and cybersecurity projects."
   />
 
-  <!-- Google Verification (Meta Tag Method) -->
+  <!-- Google Verification -->
   <meta name="google-site-verification" content="3hqPPUpGrY_DRod2zw_x0LuNDbeC7lPo6dXnlzoXrDw" />
 
-  <!-- Canonical URL to avoid duplicate content -->
+  <!-- Canonical URL -->
   <link rel="canonical" href="https://shyed.github.io/sheila-portfolio/" />
 
-  <!-- Open Graph tags (for LinkedIn/social sharing preview) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Sheila Demonteverde | Software Engineer Portfolio" />
-  <meta property="og:description" content="Software engineer building web apps, mobile apps, and cybersecurity tools." />
+  <meta property="og:description" content="Software engineer building web apps, APIs, and cybersecurity tools." />
   <meta property="og:url" content="https://shyed.github.io/sheila-portfolio/" />
   <meta property="og:type" content="website" />
 
-  <!-- Favicon (tab icon) -->
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
   <link rel="icon" href="images/logo.jpg" />
 
   <!-- External CSS -->
   <link rel="stylesheet" href="css-style.css" />
+
 </head>
+
 <body>
 
-  <!-- Header with logo and navigation-->
+  <!-- Header -->
   <header>
-    <img src="images/logo.jpg" alt="Sheila Demonteverde Logo" class="logo" />
-    <h1>Sheila Demonteverde</h1>
 
-    <!-- Navigation links -->
+    <!-- Left Side -->
+    <div class="header-left">
+      <img src="images/logo.jpg" alt="Sheila Demonteverde Logo" class="logo" />
+      <h1>Sheila Demonteverde</h1>
+    </div>
+
+    <!-- Navigation -->
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -51,30 +61,52 @@
         <li><a href="achievements.html">Achievements</a></li>
       </ul>
     </nav>
+
   </header>
 
+  <!-- Main Content -->
   <main>
-    <!-- Hero section (main intro area on homepage)-->
-    <section class="hero">
-     <!-- Profile Image -->
-          <img src="images/image.png" alt="Sheila Demonteverde" class="profile-pic" />
-      
-      <h2>Software Engineer Portfolio</h2>
 
-      <!-- Short intro summary -->
+    <!-- Hero Section -->
+    <section class="hero">
+
+      <!-- Profile Image -->
+      <img
+        src="images/image.png"
+        alt="Sheila Demonteverde"
+        class="profile-pic"
+      />
+
+      <!-- Main Heading -->
+      <h2>Software Engineer & Developer</h2>
+
+      <!-- Intro Text -->
       <p>
-        I’m Sheila Demonteverde, a software engineering student building web applications,
-        mobile apps, and cybersecurity projects to solve real-world problems.
+        I’m Sheila Demonteverde, a software engineering student passionate about
+        building modern web applications, APIs, mobile apps, and cybersecurity
+        projects that solve real-world problems.
       </p>
 
-      <!--Call to action button-->
-      <a href="resume.html" class="btn">View Resume</a>
+      <!-- Buttons -->
+      <div class="hero-buttons">
+        <a href="resume.html" class="btn">View Resume</a>
+
+        <a
+          href="https://github.com/Shyed"
+          target="_blank"
+          class="btn-secondary"
+        >
+          GitHub
+        </a>
+      </div>
+
     </section>
+
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 Sheila Demonteverde</p>
+    <p>&copy; 2026 Sheila Demonteverde. All Rights Reserved.</p>
   </footer>
 
 </body>
