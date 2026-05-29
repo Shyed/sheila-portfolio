@@ -1,368 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic setup + responsive design -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!--Page title -->
   <title>Projects | Sheila Demonteverde</title>
-  
-  <!-- External CSS -->
   <link rel="stylesheet" href="css-style.css" />
 </head>
 <body>
 
-    <!-- Header with logo and navigation -->  
-    <header>
-        <img src="images/logo.jpg" alt="Sheila Demonteverde Logo" class="logo" />
-        <h1>Sheila Demonteverde</h1>
-        
-        <!-- Navigation links -->
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="achievements.html">Achievements</a></li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <img src="images/logo.jpg" alt="Sheila Demonteverde Logo" class="logo" />
+    <h1>Sheila Demonteverde</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Main projects section -->
   <main class="projects">
     <h2>My Projects</h2>
-    
-    <!-- Category 1: AAS Projects -->
-    <h3 class="category-label">Software Programming and Systems Development AAS Projects</h3>
+
+    <h3 class="category-label">Featured Software Projects</h3>
     <div class="project-grid">
-
-      <!-- Individual project card -->
       <div class="project-card">
-        <h3>ATM Machine with PIN (C++)</h3>
-        <video src="videos/ATM Machine with Pin Code.mp4" controls></video>
-        <p>Simulated ATM interface with PIN verification and transaction options built in C++.</p>
-        <a href="https://github.com/Shyed/ATM-with-pin" target="_blank">View Source Code (Updated)</a>
+        <h3>Job Tracker</h3>
+        <p>Full-stack job application tracker with React, Supabase authentication, database storage, status workflows, notes, and a deployed dashboard.</p>
+        <a href="https://job-tracker-five-phi.vercel.app" target="_blank">Live App</a> |
+        <a href="https://github.com/Shyed/job-tracker" target="_blank">View Source Code</a>
       </div>
 
-      <!-- Individual project card -->
       <div class="project-card">
-        <h3>Database Set Up (SQL)</h3>
-        <video src="videos/Database Set Up.mp4" controls></video>
-        <p>Created SQL database with multiple tables, constraints, and CRUD functionality.</p>
+        <h3>AI Chat App</h3>
+        <p>Full-stack AI chat app with a React/Vite frontend, Node.js and Express backend, and Hugging Face API integration.</p>
+        <a href="https://ai-chat-app-six-beryl.vercel.app" target="_blank">Live App</a> |
+        <a href="https://github.com/Shyed/ai-chat-app" target="_blank">View Source Code</a>
       </div>
 
-      <!-- Individual project card -->
       <div class="project-card">
-        <h3>Index Card App (MIT App Inventor 2)</h3>
-        <video src="videos/ECF Final Project.mp4" controls></video>
-        <p>Mobile flashcard app built with MIT App Inventor 2 for study and memory practice. Features swipe navigation and customizable card sets.</p>
+        <h3>InventoryTool GUI</h3>
+        <video src="videos/InventoryTool GUI Demo.mp4" controls></video>
+        <p>C# WinForms inventory management tool with separated core logic and GUI layers, using design patterns for inventory operations and filtering.</p>
+        <a href="https://github.com/Shyed/InventoryTool-GUI" target="_blank">View Source Code</a>
+      </div>
+    </div>
+
+    <h3 class="category-label">Testing, Systems, and Database Coursework</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Tricentis Tosca Test Automation</h3>
+        <video src="videos/Tricentis Tosca Demo.mp4" controls></video>
+        <p>SWENG 431 group project using Tricentis Tosca to design automated test scenarios for an Inventory and Order Management Tool, with focus on functional testing, workflow validation, and model-based test automation.</p>
       </div>
 
-      <!-- Individual project card -->
       <div class="project-card">
-        <h3>Haunted Jaunt Game (Unity)</h3>
-        <video src="videos/Jhon Lemons Haunted Jaunt - Video Presentation.mp4" controls></video>
-        <p>Unity 3D horror platformer with sprites, audio, and interactive gameplay.</p>
-         <a href="https://github.com/Shyed/UNITY-John-Lemon-s-Haunted-Jaunt" target="_blank">View Source Code</a>
+        <h3>MIPS Memory Grid Game</h3>
+        <video src="videos/MIPS Memory Grid Game.mp4" controls></video>
+        <p>MIPS assembly Simon-style memory game using the MARS bitmap display, MMIO keyboard input, random sequences, tile rendering, and sound feedback.</p>
+        <a href="https://github.com/Shyed/mips-memory-grid-game" target="_blank">View Source Code</a>
       </div>
 
-      <!-- Individual project card -->
       <div class="project-card">
-        <h3>Android To-Do List App (Kotlin)</h3>
+        <h3>Blue-White Cruises Database Client</h3>
+        <p>Java database client for a cruise management system using JDBC, Apache Derby, prepared statements, and SQL joins.</p>
+        <a href="https://github.com/Shyed/BlueWhiteCruisesDB" target="_blank">View Source Code</a>
+      </div>
+    </div>
+
+    <h3 class="category-label">Additional Technical Projects</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>NASA APOD CLI</h3>
+        <p>Python command-line app that fetches NASA Astronomy Picture of the Day data from an external API.</p>
+        <a href="https://github.com/Shyed/nasa-apod-cli" target="_blank">View Source Code</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Airport Database PHP Viewer</h3>
+        <p>PHP database viewer for browsing airport records with a structured web interface and SQL-backed data access.</p>
+        <a href="https://github.com/Shyed/airport-database-php-viewer" target="_blank">View Source Code</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Android To-Do List App</h3>
         <video src="videos/MAC 220 Project.mp4" controls></video>
-        <p>Task manager mobile app using Kotlin with SQLite storage and material design.</p>
+        <p>Kotlin Android to-do list app for creating, organizing, and tracking tasks on mobile.</p>
         <a href="https://github.com/Shyed/AndroidToDoListApp" target="_blank">View Source Code</a>
       </div>
+    </div>
 
-      <!-- Individual project card -->
+    <h3 class="category-label">Earlier Coursework and Practice</h3>
+    <div class="project-grid">
       <div class="project-card">
-        <h3>Tic Tac Toe Game (C++)</h3>
-        <video src="videos/MAC125 Project.mp4" controls></video>
-        <p>Advanced C++ command-line Tic Tac Toe game with input validation and win/tie detection logic. Uses functions, loops, and clean modular code.</p>
-        <a href="https://github.com/Shyed/tic-tac-toe" target="_blank">View Source Code</a>
-      </div>
-
-      <!-- Individual project card -->
-      <div class="project-card">
-        <h3>Web Dev I – Portfolio Site (HTML, CSS, JS)</h3>
-        <video src="videos/MAC172 Project1.mp4" controls></video>
-        <p>Front-end site showcasing layout, styling, and JavaScript interactivity.</p>
-      </div>
-
-      <!-- Individual project card -->
-      <div class="project-card">
-        <h3>Web Dev I – UI Enhancement (HTML/CSS)</h3>
-        <video src="videos/MAC172-Project.mp4" controls></video>
-        <p>Expanded version of Web Dev I project with improved styling and layout.</p>
-        <a href="https://github.com/Shyed/responsive-multi-section-css-full-website" target="_blank">View Source Code</a>
-      </div>
-
-      <!-- Individual project card -->
-      <div class="project-card">
-        <h3>Java OOP Project</h3>
-        <video src="videos/MAC190 Project.mp4" controls></video>
-        <p>Java application applying object-oriented concepts like classes and inheritance.</p>
-      </div>
-
-      <!-- Individual project card -->
-      <div class="project-card">
-        <h3>Web Dev II – Dynamic Site (PHP/MySQL)</h3>
+        <h3>PHP Secure Login Gym System</h3>
         <video src="videos/MAC272 Project.mp4" controls></video>
-        <p>Dynamic full-stack website featuring form validation, client-side scripting, and server-side integration using PHP and MySQL. Developed for Web Dev II.</p>
+        <p>Dynamic PHP and MySQL web application with login functionality, form validation, and server-side database integration.</p>
         <a href="https://github.com/Shyed/php-secure-login-gym-system" target="_blank">View Source Code</a>
       </div>
 
-      <!-- Individual project card -->
       <div class="project-card">
-        <h3>Simple Calculator (C++)</h3>
-        <video src="videos/PROJECT 1 - SIMPLE CALCULATOR.mp4" controls></video>
-        <p>Basic calculator with GUI logic using C++ for arithmetic operations.</p>
-         <a href="https://github.com/Shyed/Simple-Calculator" target="_blank">View Source Code</a>
+        <h3>Unity 3D Game Project</h3>
+        <video src="videos/Jhon Lemons Haunted Jaunt - Video Presentation.mp4" controls></video>
+        <p>Unity 3D game project built to practice C# scripting, scenes, collision, movement, and gameplay mechanics.</p>
+        <a href="https://github.com/Shyed/UNITY-John-Lemon-s-Haunted-Jaunt" target="_blank">View Source Code</a>
       </div>
 
-    </div> 
-
-  <!-- Category 2: Full-Stack Web Development Projects -->
-  <h3 class="category-label">Full-Stack Web Development Projects</h3>
-  <div class="project-grid">
-
-    <!-- Individual project card -->
-    <div class="project-card">
-  <h3>AI Chat App (React, Node.js, Express, Hugging Face)</h3>
-  <img src="images/ai-chat-image.JPG" alt="AI Chat App Screenshot" />
-  <p>
-    Full-stack AI chat application with a React (Vite) frontend and Node.js + Express backend.
-    Users can send prompts and receive real-time AI-generated responses using a Hugging Face OpenAI-compatible API.
-  </p>
-  <a href="https://ai-chat-9wzaynx6r-shyeds-projects.vercel.app" target="_blank">Live App</a> |
-  <a href="https://github.com/Shyed/ai-chat-app" target="_blank">View Source Code</a>
-</div>
-
-    <!-- Individual project card -->
       <div class="project-card">
-        <h3>Task Manager API (Node.js, Express, MongoDB)</h3>
-         <img src="images/task-manager-image.JPG" alt="Task Manager App Screenshot" />
-        <p>Full-stack task management API with CRUD functionality, connected to MongoDB Atlas and deployed using Render.</p>
-        <a href="https://task-manager-vr7v.onrender.com/" target="_blank">Live API</a> |
-        <a href="https://github.com/Shyed/task-manager" target="_blank">View Source Code</a>
+        <h3>ATM Machine with PIN</h3>
+        <video src="videos/ATM Machine with Pin Code.mp4" controls></video>
+        <p>C++ console ATM simulation with PIN authentication, balance checks, deposits, and withdrawals.</p>
+        <a href="https://github.com/Shyed/ATM-with-pin" target="_blank">View Source Code</a>
       </div>
-
-    <!-- Individual project card -->
-      <div class="project-card">
-        <h3>Habit Tracker (Node.js, Express, MongoDB)</h3>
-         <img src="images/habit-tracker-image.JPG" alt="Habit Tracker App Screenshot" />
-        <p>Full-stack habit tracker with daily logging, streak tracking, and MongoDB persistence. Users can add habits, mark completions, and view progress.</p>
-        <a href="https://habit-tracker-1-4yz2.onrender.com/" target="_blank">Live App</a> |
-        <a href="https://github.com/Shyed/habit-tracker-1" target="_blank">View Source Code</a>
     </div>
+  </main>
 
-    <!-- Individual project card -->
-     <div class="project-card">
-        <h3>Job Tracker (React, Supabase, Vercel)</h3>
-        <img src="images/job-tracker-image.JPG" alt="Job Tracker App Screenshot" />
-        <p>Full-stack job tracking app with user authentication and database integration. Users can add, update, and delete job applications while tracking statuses like Applied, Interview, Offer, and Rejected.</p>
-        <a href="https://job-tracker-five-phi.vercel.app" target="_blank">Live App</a> |
-        <a href="https://github.com/Shyed/job-tracker" target="_blank">View Source Code</a>
-    </div>
-
-  </div> 
-
-  <!-- Category 3: Frontend (HTML/CSS/JS) Mini Projects-->
-  <h3 class="category-label">Frontend (HTML/CSS/JS) Mini Projects</h3>
-  <div class="project-grid">
-
-    <!-- Individual project card -->
-    <div class="project-card">
-      <h3>QR Code Generator</h3>
-      <img src="images/qr-generator.JPG" alt="QR Code Generator App Screenshot" />
-      <p>Enter any text or URL and instantly generate a scannable QR code using a free API.</p>
-      <a href="https://shyed.github.io/qr-code-generator/" target="_blank">Live App</a> |
-      <a href="https://github.com/Shyed/qr-code-generator" target="_blank">View Source Code</a>
-    </div>
-
-    <!-- Individual project card -->
-    <div class="project-card">
-      <h3>Responsive Portfolio</h3>
-      <img src="images/responsive-portfolio.JPG" alt="Responsive Portfolio App Screenshot" />
-      <p>A mobile-friendly personal portfolio site to showcase projects and contact details. Built using just HTML and CSS.</p>
-      <a href="https://shyed.github.io/responsive-portfolio/" target="_blank">Live App</a> |
-      <a href="https://github.com/Shyed/responsive-portfolio" target="_blank">View Source Code</a>
-    </div>
-
-    <!-- Individual project card -->
-    <div class="project-card">
-      <h3>Light/Dark Toggle</h3>
-      <img src="images/light-toggle.JPG" alt="Light/Dark Toggle App Screenshot" />
-      <p>Simple toggle between light and dark themes using CSS variables and localStorage.</p>
-      <a href="https://shyed.github.io/light-dark-toggle/" target="_blank">Live App</a> |
-      <a href="https://github.com/Shyed/light-dark-toggle " target="_blank">View Source Code</a>
-    </div>
-
-    <!-- Individual project card -->
-   <div class="project-card">
-    <h3>Image Carousel</h3>
-     <img src="images/image carousel.JPG" alt="Image Carousel App Screenshot" />
-    <p>Responsive carousel with previous/next buttons and smooth transitions.</p>
-    <a href="https://shyed.github.io/image-carousel/" target="_blank">Live App</a> |
-    <a href="https://github.com/Shyed/image-carousel " target="_blank">View Source Code</a>
-  </div>
-
-    <!-- Individual project card -->
-    <div class="project-card">
-      <h3>Color Scheme Generator</h3>
-      <img src="images/color-generator.JPG" alt="Color Scheme Generator App Screenshot" />
-      <p>Pick a base color and generate 5-color palettes using TheColorAPI.</p>
-      <a href="https://shyed.github.io/color-scheme-generator/" target="_blank">Live App</a> |
-      <a href="https://github.com/Shyed/color-scheme-generator" target="_blank">View Source Code</a>
-    </div>
-</div> 
-
-  <!-- Category 4: JavaScript Logic Projects -->
-  <h3 class="category-label">JavaScript Logic Projects</h3>
-  <div class="project-grid">
-
-  <!-- Individual project card -->
-  <div class="project-card">
-    <h3>Countdown Timer</h3>
-    <img src="images/countdown-timer.JPG" alt="Countdown Timer App Screenshot" />
-    <p>A simple and responsive countdown timer built with HTML, CSS, and JavaScript. Users can set a future date and time, and the app will display the live countdown in days, hours, minutes, and seconds.</p>
-    <a href="https://shyed.github.io/countdown-timer/" target="_blank">Live App</a> |
-    <a href="https://github.com/Shyed/countdown-timer" target="_blank">View Source Code</a>
-  </div>
-
-    <!-- Individual project card -->
-  <div class="project-card">
-    <h3>Rock Paper Scissors Game</h3>
-    <img src="images/rock-paper-scissors.JPG" alt="Rock Paper Scissors App Screenshot" />
-    <p>A simple interactive game where the player competes against the computer by choosing Rock, Paper, or Scissors. The game displays the outcome and keeps score.</p>
-    <a href="https://shyed.github.io/rock-paper-scissors/" target="_blank">Live App</a> |
-    <a href="https://github.com/Shyed/rock-paper-scissors " target="_blank">View Source Code</a>
-  </div>
-
-    <!-- Individual project card -->
-  <div class="project-card">
-    <h3>To-Do List</h3>
-    <img src="images/todo-list.JPG" alt="To Do List App Screenshot" />
-    <p>A simple, responsive to-do list web app that lets users add, delete, and complete tasks in real-time. Built with plain HTML, CSS, and JavaScript.</p>
-    <a href="https://shyed.github.io/todo-list/" target="_blank">Live App</a> |
-    <a href="https://github.com/Shyed/todo-list" target="_blank">View Source Code</a>
-  </div>
-
-    <!-- Individual project card -->
-  <div class="project-card">
-    <h3>Stopwatch App</h3>
-    <img src="images/stopwatch.JPG" alt="Stopwatch App Screenshot" />
-    <p>A simple digital stopwatch built with JavaScript. Users can start, stop, and reset the timer with precision to hundredths of a second.</p>
-    <a href="https://shyed.github.io/stopwatch-app/" target="_blank">Live App</a> |
-    <a href="https://github.com/Shyed/stopwatch-app" target="_blank">View Source Code</a>
-  </div>
-</div> 
-
-<!-- Category 5:Python Mini Projects -->
-  <h3 class="category-label">Python Mini Projects</h3>
-  <div class="project-grid">
-
-    <!-- Individual project card -->
-    <div class="project-card">
-      <h3>Weather App (Python CLI)</h3>
-      <p>Command-line weather app that fetches real-time temperature, humidity, and condition using the OpenWeatherMap API. Built with Python and the requests library.</p>
-      <a href="https://github.com/Shyed/weather-cli" target="_blank">View Source Code</a>
-    </div>
-
-    <!-- Individual project card -->
-  <div class="project-card">
-    <h3>Password Generator (Python CLI)</h3>
-    <p>A command-line app that generates strong random passwords based on user-defined settings like length, uppercase, numbers, and special characters.</p>
-    <a href="https://github.com/Shyed/password-generator" target="_blank">View Source Code</a>
-  </div>
-
-    <!-- Individual project card -->
-    <div class="project-card">
-    <h3>Currency Converter (CLI)</h3>
-    <p>A simple Python command-line app that converts currencies using real-time exchange rates. Built with the exchangerate-api.com API.</p>
-    <a href="https://github.com/Shyed/currency-converter" target="_blank">View Source Code</a>
-  </div>
-
-    <!-- Individual project card -->
-    <div class="project-card">
-    <h3>File Organizer (CLI)</h3>
-    <p>A simple Python script that organizes files in a folder into subfolders by file type. Supports categories like Images, Documents, Audio, and more.</p>
-    <a href="https://github.com/Shyed/file-organizer" target="_blank">View Source Code</a>
-  </div>
-
-    <!-- Individual project card -->
-    <div class="project-card">
-    <h3>Simple Calculator (CLI)</h3>
-    <p>A basic command-line calculator that performs addition, subtraction, multiplication, and division. Built with Python for practice with conditionals, loops, and input validation.</p>
-    <a href="https://github.com/Shyed/simple-calculator-python-cli" target="_blank">View Source Code</a>
-  </div>
-
-  </div> 
-    
-<!-- Category 6:API-Based Projects -->
-<h3 class="category-label">API-Based CLI Projects</h3>
-  <div class="project-grid">
-
-    <!-- Individual project card -->
-  <div class="project-card">
-    <h3>Joke Generator (Python CLI)</h3>
-    <p>Fetches a random dad joke from the icanhazdadjoke API and displays it in the terminal. No API key required.</p>
-    <a href="https://github.com/Shyed/joke-generator" target="_blank">View Source Code</a>
-  </div>
-
-    <!-- Individual project card -->
-  <div class="project-card">
-    <h3>Dog Image Fetcher (Python CLI)</h3>
-    <p>Grabs a random dog image URL from Dog CEO's API and optionally opens it in your browser.</p>
-    <a href="https://github.com/Shyed/dog-image-fetcher" target="_blank">View Source Code</a>
-  </div>
-
-    <!-- Individual project card -->
-  <div class="project-card">
-    <h3>Dictionary App (Python CLI)</h3>
-    <p>Uses dictionaryapi.dev to look up word definitions, parts of speech, and example sentences.</p>
-    <a href="https://github.com/Shyed/dictionary-cli" target="_blank">View Source Code</a>
-  </div>
-
-    <!-- Individual project card -->
-  <div class="project-card">
-    <h3>Crypto Tracker (Python CLI)</h3>
-    <p>Fetches real-time prices for Bitcoin and Ethereum using CoinGecko’s API. Displays USD value.</p>
-    <a href="https://github.com/Shyed/cyrpto-tacker-cli" target="_blank">View Source Code</a>
-  </div>
-
-    <!-- Individual project card -->
-  <div class="project-card">
-    <h3>NASA APOD Viewer (Python CLI)</h3>
-    <p>Displays NASA’s Astronomy Picture of the Day, including title, explanation, and image URL.</p>
-    <a href="https://github.com/Shyed/nasa-apod-cli" target="_blank">View Source Code</a>
-  </div>
-</div> 
-
-    <!-- Category 7: Video Presentation Creation -->
-<h3 class="category-label">Video Presentation Creation</h3>
-<div class="project-grid">
-
-  <!-- Individual project card -->
-  <div class="project-card">
-    <h3>Inventory and Order Management Tool</h3>
-    <p>
-      Created short narrated videos explaining core software design patterns
-      using diagrams, visuals, and structured walkthroughs for academic presentations.
-    </p>
-    <video src="videos/GUI Demo.mp4" controls></video>
-    <p><strong>Topics:</strong> Abstract Factory, Builder, Proxy, Adapter, Composite</p>
-    <p><strong>Tools:</strong> PowerPoint, Canva, Stock Footage, Video Compression</p>
-  </div>
- 
-</div> 
-  
-</main>
-
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Sheila Demonteverde</p>
   </footer>
